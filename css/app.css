@@ -393,6 +393,17 @@ section.default.choose-us {
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
+section.default.choose-us .box-model div {
+  flex: 2;
+}
+section.default.choose-us .box-model iconify-icon {
+  flex: 1;
+}
+section.default.choose-us .box-model:hover iconify-icon {
+  background: aliceblue;
+  box-shadow: 2px 2px 20px 10px rgba(255, 90, 0, 0.1882352941);
+  border-radius: 10px;
+}
 section.default.skill {
   background-color: #ff5411;
 }
