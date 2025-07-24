@@ -30,12 +30,12 @@ body {
   font-family: "Merriweather_24pt-Regular";
 }
 body::-webkit-scrollbar {
-  background-color: #ff6d33;
+  background-color: #ff5411;
   width: 4px;
 }
 body::-webkit-scrollbar-thumb {
   border-radius: 50px;
-  background: #ff6d33;
+  background: #ff5411;
 }
 
 .top-bar {
@@ -59,7 +59,7 @@ body::-webkit-scrollbar-thumb {
   list-style: none;
 }
 .top-bar ul li iconify-icon {
-  color: #ff6d33;
+  color: #ff5411;
 }
 .top-bar ul li a {
   text-decoration: none;
@@ -95,15 +95,15 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .navCustom .nav-item .nav-link {
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: #4b4b4b;
   padding: 0.8rem 14px;
   transition: all 0.3s ease-in-out;
   font-family: "Merriweather_24pt-Regular";
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .navCustom .nav-item .nav-link.active {
-  color: #ff6d33;
+  color: #ff5411;
   position: relative;
 }
 .navCustom .nav-item .nav-link.active:after {
@@ -114,7 +114,7 @@ body::-webkit-scrollbar-thumb {
   left: 50%;
   transform: translate(-50%, -50%);
   top: 46px;
-  background: #ff6d33;
+  background: #ff5411;
   border-radius: 5px;
   margin: 0 auto;
 }
@@ -125,7 +125,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .navCustom .nav-item .nav-link:hover {
-  color: #ff6d33;
+  color: #ff5411;
 }
 
 .hero {
@@ -182,7 +182,7 @@ body::-webkit-scrollbar-thumb {
 .hero .hero-left .inner .social ul li a {
   height: 38px;
   width: 38px;
-  border: 2px solid #ff6d33;
+  border: 2px solid #ff5411;
   margin-right: 5px;
   text-align: center;
   border-radius: 50%;
@@ -196,7 +196,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.3rem;
 }
 .hero .hero-left .inner .social ul li a:hover {
-  background: #ff6d33;
+  background: #ff5411;
 }
 .hero .hero-left .inner .intro-title {
   margin: 13px 0;
@@ -221,7 +221,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 14px;
   font-family: "Alef-Bold";
   text-transform: capitalize;
-  background: linear-gradient(90deg, #ff6d33, transparent);
+  background: linear-gradient(90deg, #ff5411, transparent);
   padding: 10px;
   border-radius: 5px;
   margin: 15px 0px;
@@ -262,7 +262,7 @@ body::-webkit-scrollbar-thumb {
 
 .btn-theme {
   text-transform: capitalize;
-  background-color: #ff6d33;
+  background-color: #ff5411;
   color: #FFffff;
   text-align: center;
   text-decoration: none;
@@ -279,11 +279,11 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
 }
 .btn-theme.outline {
-  border: 2px solid #ff6d33;
+  border: 2px solid #ff5411;
   background: transparent;
 }
 .btn-theme.outline:hover {
-  background: #ff6d33;
+  background: #ff5411;
   color: #FFffff;
   transform: translateY(-2px);
 }
@@ -297,7 +297,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .txt-ternary {
-  color: #ff6d33;
+  color: #ff5411;
 }
 
 section.default {
@@ -305,10 +305,10 @@ section.default {
   overflow-x: hidden;
 }
 section.default.services, section.default.portfolio, section.default.skill, section.default.about {
-  background: #ff6d33;
+  background: #ff5411;
 }
 section.default.services small, section.default.portfolio small, section.default.skill small, section.default.about small {
-  color: #ff6d33;
+  color: #ff5411;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -326,7 +326,7 @@ section.default.services .items, section.default.portfolio .items, section.defau
   border-radius: 4px;
 }
 section.default.services .items .iconify, section.default.portfolio .items .iconify, section.default.skill .items .iconify, section.default.about .items .iconify {
-  color: #ff6d33;
+  color: #ff5411;
   font-size: 4rem;
   margin-bottom: 25px;
 }
@@ -337,7 +337,7 @@ section.default.services .items h4, section.default.portfolio .items h4, section
   font-family: "OpenSans-Medium";
 }
 section.default.services .items:hover, section.default.portfolio .items:hover, section.default.skill .items:hover, section.default.about .items:hover {
-  background: #ff6d33;
+  background: #ff5411;
 }
 section.default.services .items:hover .iconify, section.default.portfolio .items:hover .iconify, section.default.skill .items:hover .iconify, section.default.about .items:hover .iconify {
   color: #FFffff;
@@ -367,7 +367,7 @@ section.default.about .aboutMePhoto {
   }
 }
 section.default.about .inner {
-  background-color: #ff6d33;
+  background-color: #ff5411;
   padding: 35px;
   border-radius: 4px;
 }
@@ -378,7 +378,7 @@ section.default.about .inner h6 {
   font-family: "Copperplate-Gothic-Bold";
 }
 section.default.skill {
-  background-color: #ff6d33;
+  background-color: #ff5411;
 }
 section.default.portfolio {
   background-color: #222539;
@@ -388,7 +388,7 @@ section.default.testimonial-section {
 }
 section.default.testimonial-section small {
   font-weight: bold;
-  color: #ff6d33;
+  color: #ff5411;
   text-transform: uppercase;
 }
 section.default.testimonial-section .secTtile {
@@ -401,7 +401,7 @@ section.default.contact-section {
 }
 section.default.contact-section small {
   font-weight: bold;
-  color: #ff6d33;
+  color: #ff5411;
   text-transform: uppercase;
 }
 section.default.contact-section .secTtile {
@@ -548,7 +548,7 @@ section.default.contact-section .secTtile {
   border-radius: 50%;
   padding: 0;
   display: flex;
-  background-color: #ff6d33;
+  background-color: #ff5411;
   justify-content: center;
   align-items: center;
   animation-delay: 1s;
@@ -630,7 +630,7 @@ section.default.contact-section .secTtile {
     box-shadow: 0 0 0;
   }
   50% {
-    box-shadow: 0 0 111px #ff6d33;
+    box-shadow: 0 0 111px #ff5411;
     border-color: #FFf;
   }
   100% {
@@ -663,7 +663,7 @@ section.default.contact-section .secTtile {
   text-transform: uppercase;
 }
 #myTab .nav-item .nav-link.active {
-  background-color: #ff6d33;
+  background-color: #ff5411;
   color: #fff;
 }
 
@@ -686,7 +686,7 @@ section.default.contact-section .secTtile {
   position: relative;
   z-index: 2;
   color: #fff !important;
-  background-color: #ff6d33;
+  background-color: #ff5411;
 }
 .card-style .project-name a {
   text-decoration: none;
@@ -701,7 +701,7 @@ section.default.contact-section .secTtile {
 .testimonial-section .testimonial .blogBox {
   transition: all 0.4s ease;
   border-radius: 15px;
-  background: linear-gradient(360deg, #ff6d33 -37%, transparent);
+  background: linear-gradient(360deg, #ff5411 -37%, transparent);
 }
 .testimonial-section .testimonial .blogBox .content {
   padding: 34px;
@@ -714,7 +714,7 @@ section.default.contact-section .secTtile {
 }
 
 .contact-section {
-  background-color: #ff6d33;
+  background-color: #ff5411;
 }
 .contact-section .form-group {
   margin: 8px 0;
@@ -732,7 +732,7 @@ section.default.contact-section .secTtile {
 }
 .contact-section .form-control:focus {
   color: #fff;
-  border-color: #ff6d33;
+  border-color: #ff5411;
   box-shadow: 0 0 1px 0.3rem rgba(253, 13, 13, 0.2509803922);
 }
 .contact-section .form-control:focus::-moz-placeholder {
@@ -752,12 +752,12 @@ section.default.contact-section .secTtile {
 
 ::-moz-selection {
   color: #FFffff;
-  background: #ff6d33;
+  background: #ff5411;
 }
 
 ::selection {
   color: #FFffff;
-  background: #ff6d33;
+  background: #ff5411;
 }
 
 .slick-track {
@@ -771,7 +771,7 @@ section.default.contact-section .secTtile {
 .slick-next {
   height: 35px !important;
   width: 35px !important;
-  background: #ff6d33;
+  background: #ff5411;
 }
 .slick-next:hover {
   background: #222539;
@@ -780,7 +780,7 @@ section.default.contact-section .secTtile {
 .slick-prev {
   height: 35px !important;
   width: 35px !important;
-  background: #ff6d33;
+  background: #ff5411;
 }
 .slick-prev:hover {
   background: #222539;
@@ -794,7 +794,7 @@ section.default.contact-section .secTtile {
 }
 
 .slick-dots .slick-active button {
-  background: #ff6d33 !important;
+  background: #ff5411 !important;
 }
 
 .carousel-indicators {

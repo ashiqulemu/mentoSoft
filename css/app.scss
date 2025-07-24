@@ -33,9 +33,9 @@
 
  // varitable
 
- $primary: #ff6d33;
+ $primary: #ff5411;
  $secondary: #222539;
- $ternary: #ff6d33;
+ $ternary: #ff5411;
  $white: #FFffff;
  $black: #4b4b4b;
  $txt: #C5C5C5;
@@ -133,12 +133,12 @@
  .navCustom {
      .nav-item {
          .nav-link {
-             text-transform: capitalize;
+             text-transform: uppercase;
              color: $black;
              padding: 0.8rem 14px;
              @include transition(0.3s);
              font-family: 'Merriweather_24pt-Regular';
-             font-size: 1.3rem;
+             font-size: 1.2rem;
 
              &.active {
                  color: $ternary;
