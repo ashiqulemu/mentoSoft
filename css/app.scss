@@ -25,7 +25,10 @@
      src: url('../fonts/Merriweather_24pt-Black.ttf');
  }
 
-
+.txt-bold{
+      font-family: 'Merriweather_24pt-Bold';
+      font-weight: bold;
+}
 
 
  // varitable
@@ -172,11 +175,31 @@
 
  .hero {
      background: $secondary;
-     height: 95vh;
+     height: 85vh;
      overflow: hidden;
+     position: relative;
+
+     #videoAdjust {
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+     }
+
+     .hero-content{
+       position: relative;
+       z-index: 2;
+       background-color:rgb(255 224 211 / 83%);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+       flex-direction: column;
+     }
 
      @media(max-width: 1023px) {
-         height: auto;
+         min-height: auto;
      }
 
      .hero-left {
