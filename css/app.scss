@@ -996,7 +996,8 @@
      margin-top: 25px;
      background-color: #ffffff;
      border-radius: 50px 50px 0 0;
-     background-image: url('../images/bg-shape-pattern-footer.svg');
+     background-image: url('../images/footerbg.png');
+    //  background-image: url('../images/bg-shape-pattern-footer.svg');
      border-top: 8px solid $ternary;
 
      small {
@@ -1057,7 +1058,8 @@
  }
 
  .footer {
-     background: $ternary;
+     background:#000; 
+     color: $ternary;
  }
 
  ::selection {
