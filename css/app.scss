@@ -31,7 +31,7 @@
  }
 
  .txt-bold {
-     font-family: 'Merriweather_24pt-Bold'; 
+     font-family: 'Merriweather_24pt-Bold';
  }
 
  .title-font {
@@ -433,30 +433,34 @@
 
  }
 
- .box-gradient-counter{
-    background: linear-gradient(45deg, #ffdb8b, transparent, #ffefaf);
-    span.fs-5.text-dark{
-        line-height: 0;
-    }
+ .box-gradient-counter {
+     background: linear-gradient(45deg, #ffdb8b, transparent, #ffefaf);
+
+     span.fs-5.text-dark {
+         line-height: 0;
+     }
  }
 
- .box-gradient{
-            background: linear-gradient(239deg, #ffffff, rgba(255, 167, 51, 0.5019607843));
-            transition: background 0.4s ease;
-            h5{
-                font-family: 'Merriweather_24pt-Regular'; 
-            }
-            &:hover{
-            background: linear-gradient(360deg, #ffffff, rgba(255, 167, 51, 0.411));
+ .box-gradient {
+     background: linear-gradient(239deg, #ffffff, rgba(255, 167, 51, 0.5019607843));
+     transition: background 0.4s ease;
 
-                .btn-theme{
-                    background: #171718;
-                }
-                h5{
-                     
-                    color: $ternary;
-                }
-            }
+     h5 {
+         font-family: 'Merriweather_24pt-Regular';
+     }
+
+     &:hover {
+         background: linear-gradient(360deg, #ffffff, rgba(255, 167, 51, 0.411));
+
+         .btn-theme {
+             background: #171718;
+         }
+
+         h5 {
+
+             color: $ternary;
+         }
+     }
  }
 
  .txt-ternary {
@@ -530,6 +534,7 @@
          background-repeat: no-repeat;
          background-position: 100% 100%;
          background-attachment: fixed;
+
          .box-model {
              div {
                  flex: 2;
@@ -537,25 +542,102 @@
 
              iconify-icon {
                  flex: 1;
-                 background: #ffe9d4;border-radius: 10px;
+                 background: #ffe9d4;
+                 border-radius: 10px;
              }
 
              &:hover iconify-icon {
                  background: aliceblue;
                  box-shadow: 2px 2px 20px 10px #ff5a0030;
-                 
+
              }
          }
 
 
      }
 
-     &.our-services { 
+     &.our-services {
          background: url('../images/bg.jpg');
          margin: 40px;
-         border-radius: 15px; 
+         border-radius: 15px;
          background-attachment: fixed;
          background-size: cover;
+     }
+
+     &.what-we-do {
+         background-image: linear-gradient(0deg, #ff6d33f2 -3%, #FFffff 0%, #ff6d3329 43%);
+         min-height: 100vh;
+         position: relative;
+         overflow: hidden; 
+         .inner {
+             width: 80%;
+             margin: 0 auto;
+             background: radial-gradient(transparent, #cac1bd40, transparent);
+             border-radius: 50%;
+             margin-top: 40px;
+             position: relative;
+             min-height: 570px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+            img{
+                width: 100px;
+            }
+             .ecommerce {
+                 position: absolute;
+                 
+                 right: 26%;
+                 bottom: 27%;
+                  animation: updown, zoomInOut 2s linear infinite;
+             }
+
+             .app {
+                 position: absolute;
+                  
+                 right: 40%;
+                 top: 11%;
+                  animation: updown, zoomInOut 2s linear infinite;
+             }
+
+             .customSoftware {
+                 position: absolute;
+                  
+                 left: 35%;
+                 top: 11%;
+                  animation: updown, zoomInOut 2s linear infinite;
+             }
+
+             .graphics {
+                 position: absolute;
+                 
+                 left: 23%;
+                 top: 29%;
+                  animation: updown 0.4s linear infinite, zoomInOut 2s linear infinite;
+             }
+
+             .web {
+                 position: absolute;
+                 
+                 left: 23%;
+                 bottom: 27%;
+                  animation: updown, zoomInOut 2s linear infinite;
+             }
+
+             .seo {
+                 position: absolute;
+                 
+                 right: 26%;
+                 top: 28%;
+                 animation: updown, zoomInOut 2s linear infinite;
+             }
+
+             .monitor {
+                 width: 700px;
+                 top: 30px;
+                 position: relative;
+                animation: zoomInOut 4s linear infinite;
+             }
+         }
      }
 
      &.portfolio {
@@ -597,6 +679,12 @@
      }
  }
 
+ 
+   @keyframes zoomInOut {
+     0%{transform: scale(1);}
+     50%{transform: scale(1.05);}
+     100%{transform: scale(1);}
+   }
 
  //  skills 
 
@@ -997,7 +1085,7 @@
      background-color: #ffffff;
      border-radius: 50px 50px 0 0;
      background-image: url('../images/footerbg.png');
-    //  background-image: url('../images/bg-shape-pattern-footer.svg');
+     //  background-image: url('../images/bg-shape-pattern-footer.svg');
      border-top: 8px solid $ternary;
 
      small {
@@ -1027,11 +1115,6 @@
      .social_icon {
          display: flex;
          gap: 15px;
-
-         li {
-
-             a {}
-         }
      }
 
      ul {
@@ -1058,7 +1141,7 @@
  }
 
  .footer {
-     background:#000; 
+     background: #000;
      color: $ternary;
  }
 
