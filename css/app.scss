@@ -31,8 +31,7 @@
  }
 
  .txt-bold {
-     font-family: 'Merriweather_24pt-Bold';
-     font-weight: bold;
+     font-family: 'Merriweather_24pt-Bold'; 
  }
 
  .title-font {
@@ -434,6 +433,32 @@
 
  }
 
+ .box-gradient-counter{
+    background: linear-gradient(45deg, #ffdb8b, transparent, #ffefaf);
+    span.fs-5.text-dark{
+        line-height: 0;
+    }
+ }
+
+ .box-gradient{
+            background: linear-gradient(239deg, #ffffff, rgba(255, 167, 51, 0.5019607843));
+            transition: background 0.4s ease;
+            h5{
+                font-family: 'Merriweather_24pt-Regular'; 
+            }
+            &:hover{
+            background: linear-gradient(360deg, #ffffff, rgba(255, 167, 51, 0.411));
+
+                .btn-theme{
+                    background: #171718;
+                }
+                h5{
+                     
+                    color: $ternary;
+                }
+            }
+ }
+
  .txt-ternary {
      color: $ternary;
  }
@@ -504,7 +529,7 @@
          background-size: cover;
          background-repeat: no-repeat;
          background-position: 100% 100%;
-
+         background-attachment: fixed;
          .box-model {
              div {
                  flex: 2;
@@ -512,21 +537,25 @@
 
              iconify-icon {
                  flex: 1;
+                 background: #ffe9d4;border-radius: 10px;
              }
 
              &:hover iconify-icon {
                  background: aliceblue;
                  box-shadow: 2px 2px 20px 10px #ff5a0030;
-                 border-radius: 10px;
+                 
              }
          }
 
 
      }
 
-     &.skill {
-         @extend .services;
-         background-color: $primary;
+     &.our-services { 
+         background: url('../images/bg.jpg');
+         margin: 40px;
+         border-radius: 15px; 
+         background-attachment: fixed;
+         background-size: cover;
      }
 
      &.portfolio {

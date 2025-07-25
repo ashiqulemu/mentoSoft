@@ -26,7 +26,6 @@ html {
 }
 .txt-bold {
   font-family: "Merriweather_24pt-Bold";
-  font-weight: bold;
 }
 
 .title-font {
@@ -335,6 +334,30 @@ body::-webkit-scrollbar-thumb {
   color: #C5C5C5;
 }
 
+.box-gradient-counter {
+  background: linear-gradient(45deg, #ffdb8b, transparent, #ffefaf);
+}
+.box-gradient-counter span.fs-5.text-dark {
+  line-height: 0;
+}
+
+.box-gradient {
+  background: linear-gradient(239deg, #ffffff, rgba(255, 167, 51, 0.5019607843));
+  transition: background 0.4s ease;
+}
+.box-gradient h5 {
+  font-family: "Merriweather_24pt-Regular";
+}
+.box-gradient:hover {
+  background: linear-gradient(360deg, #ffffff, rgba(255, 167, 51, 0.411));
+}
+.box-gradient:hover .btn-theme {
+  background: #171718;
+}
+.box-gradient:hover h5 {
+  color: #FF6D33;
+}
+
 .txt-ternary {
   color: #FF6D33;
 }
@@ -343,20 +366,20 @@ section.default {
   padding: 80px 0;
   overflow-x: hidden;
 }
-section.default.services, section.default.portfolio, section.default.skill {
+section.default.services, section.default.portfolio {
   background: #ff5411;
 }
-section.default.services small, section.default.portfolio small, section.default.skill small {
+section.default.services small, section.default.portfolio small {
   color: #FF6D33;
   text-transform: uppercase;
   font-weight: bold;
 }
-section.default.services .secTtile, section.default.portfolio .secTtile, section.default.skill .secTtile {
+section.default.services .secTtile, section.default.portfolio .secTtile {
   font-size: 30px;
   text-transform: capitalize;
   font-family: "OpenSans-Bold";
 }
-section.default.services .items, section.default.portfolio .items, section.default.skill .items {
+section.default.services .items, section.default.portfolio .items {
   text-align: center;
   padding: 40px 30px;
   margin-top: 22px;
@@ -364,27 +387,27 @@ section.default.services .items, section.default.portfolio .items, section.defau
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
 }
-section.default.services .items .iconify, section.default.portfolio .items .iconify, section.default.skill .items .iconify {
+section.default.services .items .iconify, section.default.portfolio .items .iconify {
   color: #FF6D33;
   font-size: 4rem;
   margin-bottom: 25px;
 }
-section.default.services .items h4, section.default.portfolio .items h4, section.default.skill .items h4 {
+section.default.services .items h4, section.default.portfolio .items h4 {
   font-size: 20px;
   margin-bottom: 16px;
   text-transform: capitalize;
   font-family: "OpenSans-Medium";
 }
-section.default.services .items:hover, section.default.portfolio .items:hover, section.default.skill .items:hover {
+section.default.services .items:hover, section.default.portfolio .items:hover {
   background: #FF6D33;
 }
-section.default.services .items:hover .iconify, section.default.portfolio .items:hover .iconify, section.default.skill .items:hover .iconify {
+section.default.services .items:hover .iconify, section.default.portfolio .items:hover .iconify {
   color: #FFffff;
 }
-section.default.services .items:hover .paragraph, section.default.portfolio .items:hover .paragraph, section.default.skill .items:hover .paragraph {
+section.default.services .items:hover .paragraph, section.default.portfolio .items:hover .paragraph {
   color: #FFffff;
 }
-section.default.services .items:hover h4, section.default.portfolio .items:hover h4, section.default.skill .items:hover h4 {
+section.default.services .items:hover h4, section.default.portfolio .items:hover h4 {
   color: #FFffff;
 }
 section.default.choose-us {
@@ -392,20 +415,26 @@ section.default.choose-us {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100% 100%;
+  background-attachment: fixed;
 }
 section.default.choose-us .box-model div {
   flex: 2;
 }
 section.default.choose-us .box-model iconify-icon {
   flex: 1;
+  background: #ffe9d4;
+  border-radius: 10px;
 }
 section.default.choose-us .box-model:hover iconify-icon {
   background: aliceblue;
   box-shadow: 2px 2px 20px 10px rgba(255, 90, 0, 0.1882352941);
-  border-radius: 10px;
 }
-section.default.skill {
-  background-color: #ff5411;
+section.default.our-services {
+  background: url("../images/bg.jpg");
+  margin: 40px;
+  border-radius: 15px;
+  background-attachment: fixed;
+  background-size: cover;
 }
 section.default.portfolio {
   background-color: #222539;
