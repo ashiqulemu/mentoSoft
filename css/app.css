@@ -428,6 +428,7 @@ section.default.what-we-do {
   min-height: 100vh;
   position: relative;
   overflow: hidden;
+  background-attachment: fixed;
 }
 section.default.what-we-do .inner {
   width: 450px;
