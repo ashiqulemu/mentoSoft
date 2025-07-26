@@ -475,6 +475,7 @@ section.default.what-we-do .inner .ecommerce, section.default.what-we-do .inner 
   font-size: 1.2rem;
   outline: 6px solid #ffffff;
   z-index: 2;
+  box-shadow: -1px 4px 6px 7px rgba(0, 0, 0, 0.3490196078);
   animation: fadeInScale 12s ease-in-out backwards infinite;
   opacity: 0;
   animation-delay: 0s;
