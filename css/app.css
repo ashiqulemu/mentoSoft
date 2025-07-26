@@ -110,18 +110,6 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 
-/*Custom cursor animation*/
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -156,10 +144,9 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .navCustom .nav-item .nav-link.active:after {
-    left: 0px;
-    top: 22px;
+    display: none;
   }
 }
 .navCustom .nav-item .nav-link:hover {
@@ -437,67 +424,94 @@ section.default.our-services {
   background-size: cover;
 }
 section.default.what-we-do {
-  background-image: linear-gradient(0deg, rgba(255, 109, 51, 0.9490196078) -3%, #FFffff 0%, rgba(255, 109, 51, 0.1607843137) 43%);
+  background: url(../images/pattern-1.svg), linear-gradient(45deg, #6058c3, rgba(250, 114, 11, 0.5607843137));
   min-height: 100vh;
   position: relative;
   overflow: hidden;
 }
 section.default.what-we-do .inner {
-  width: 80%;
+  width: 450px;
+  height: 450px;
   margin: 0 auto;
-  background: radial-gradient(transparent, rgba(202, 193, 189, 0.2509803922), transparent);
   border-radius: 50%;
   margin-top: 40px;
   position: relative;
-  min-height: 570px;
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: 8px solid #000;
+  margin-top: 50px;
+  background: #FFffff;
+  animation: changeColor 32s linear infinite;
 }
-section.default.what-we-do .inner img {
-  width: 100px;
+section.default.what-we-do .inner .circle {
+  width: 400px;
+  height: 400px;
+  background: #000;
+  border-radius: 50%;
+  background: url("../images/OF71Y80.png");
+  background-size: contain;
+  background-position: center center;
+  animation: blink 10s linear infinite;
 }
-section.default.what-we-do .inner .ecommerce {
+section.default.what-we-do .inner .ecommerce, section.default.what-we-do .inner .web, section.default.what-we-do .inner .customSoftware, section.default.what-we-do .inner .app, section.default.what-we-do .inner .graphics, section.default.what-we-do .inner .seo {
   position: absolute;
-  right: 26%;
-  bottom: 27%;
-  animation: updown, zoomInOut 2s linear infinite;
-}
-section.default.what-we-do .inner .app {
-  position: absolute;
-  right: 40%;
-  top: 11%;
-  animation: updown, zoomInOut 2s linear infinite;
-}
-section.default.what-we-do .inner .customSoftware {
-  position: absolute;
-  left: 35%;
-  top: 11%;
-  animation: updown, zoomInOut 2s linear infinite;
-}
-section.default.what-we-do .inner .graphics {
-  position: absolute;
-  left: 23%;
-  top: 29%;
-  animation: updown 0.4s linear infinite, zoomInOut 2s linear infinite;
-}
-section.default.what-we-do .inner .web {
-  position: absolute;
-  left: 23%;
-  bottom: 27%;
-  animation: updown, zoomInOut 2s linear infinite;
+  height: 130px;
+  width: 130px;
+  background: linear-gradient(45deg, #FF5722, #ffce00);
+  border-radius: 50%;
+  right: -68px;
+  bottom: 36%;
+  display: flex;
+  text-transform: capitalize;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 2px 1px black;
+  line-height: 1.2;
+  font-size: 1.2rem;
+  outline: 6px solid #ffffff;
+  z-index: 2;
+  animation: fadeInScale 12s ease-in-out backwards infinite;
+  opacity: 0;
+  animation-delay: 0s;
 }
 section.default.what-we-do .inner .seo {
-  position: absolute;
-  right: 26%;
-  top: 28%;
-  animation: updown, zoomInOut 2s linear infinite;
+  right: 22px;
+  bottom: 77%;
+  background: linear-gradient(282deg, #9862f8, #4a1f96);
+  animation-delay: 2s;
+}
+section.default.what-we-do .inner .graphics {
+  left: 22px;
+  bottom: 77%;
+  background: linear-gradient(238deg, #F44336, #560600);
+  animation-delay: 4s;
+}
+section.default.what-we-do .inner .app {
+  left: -68px;
+  bottom: 36%;
+  background: linear-gradient(238deg, #2196F3, #0b1754);
+  animation-delay: 6s;
+}
+section.default.what-we-do .inner .customSoftware {
+  left: 29px;
+  bottom: -6%;
+  background: linear-gradient(97deg, #ffffff, #6a6767);
+  animation-delay: 8s;
+}
+section.default.what-we-do .inner .web {
+  right: 28px;
+  bottom: -6%;
+  background: linear-gradient(97deg, #4c854e, #385239);
+  animation-delay: 10s;
 }
 section.default.what-we-do .inner .monitor {
   width: 700px;
   top: 30px;
   position: relative;
-  animation: zoomInOut 4s linear infinite;
 }
 section.default.portfolio {
   background-color: #222539;
@@ -529,15 +543,56 @@ section.default.contact-section .secTtile {
   font-family: "OpenSans-Bold";
 }
 
-@keyframes zoomInOut {
+@keyframes changeColor {
   0% {
-    transform: scale(1);
+    background: #ffffff;
   }
-  50% {
-    transform: scale(1.05);
+  15% {
+    background: #e6afaf;
+  }
+  30% {
+    background: #c2a8c9;
+  }
+  45% {
+    background: #b7cad3;
+  }
+  60% {
+    background: #bad6c8;
+  }
+  75% {
+    background: #a3aece;
   }
   100% {
+    background: #ffffff;
+  }
+}
+@keyframes blink {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  10% {
+    opacity: 1;
     transform: scale(1);
+  }
+  90% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
   }
 }
 .skillContainer {

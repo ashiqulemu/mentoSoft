@@ -148,48 +148,7 @@
      display: none;
  }
 
- /*Custom cursor animation*/
- @keyframes blink {
-     0% {
-         opacity: 1;
-     }
-
-     50% {
-         opacity: 0;
-     }
-
-     100% {
-         opacity: 1;
-     }
- }
-
- @-webkit-keyframes blink {
-     0% {
-         opacity: 1;
-     }
-
-     50% {
-         opacity: 0;
-     }
-
-     100% {
-         opacity: 1;
-     }
- }
-
- @-moz-keyframes blink {
-     0% {
-         opacity: 1;
-     }
-
-     50% {
-         opacity: 0;
-     }
-
-     100% {
-         opacity: 1;
-     }
- }
+ 
 
  @media (min-width: 1400px) {
 
@@ -229,9 +188,8 @@
                      border-radius: 5px;
                      margin: 0 auto;
 
-                     @media(max-width:768px) {
-                         left: 0px;
-                         top: 22px;
+                     @media(max-width:992px) {
+                         display: none;
                      }
                  }
              }
@@ -565,77 +523,108 @@
      }
 
      &.what-we-do {
-         background-image: linear-gradient(0deg, #ff6d33f2 -3%, #FFffff 0%, #ff6d3329 43%);
+         background: url(../images/pattern-1.svg), linear-gradient(45deg, #6058c3, #fa720b8f);
          min-height: 100vh;
          position: relative;
-         overflow: hidden; 
+         overflow: hidden;
+
          .inner {
-             width: 80%;
+
+             width: 450px;
+             height: 450px;
              margin: 0 auto;
-             background: radial-gradient(transparent, #cac1bd40, transparent);
              border-radius: 50%;
              margin-top: 40px;
              position: relative;
-             min-height: 570px;
              display: flex;
              justify-content: center;
              align-items: center;
-            img{
-                width: 100px;
-            }
+             outline: 8px solid #000;
+             margin-top: 50px;
+            background: $white;
+             animation: changeColor 32s linear infinite ;
+             .circle {
+                 width: 400px;
+                 height: 400px;
+                 background: #000;
+                 border-radius: 50%;
+                 background: url('../images/OF71Y80.png');
+                 background-size: contain;
+                 background-position: center center;
+                 animation: blink 10s linear infinite ;
+             }
+
              .ecommerce {
                  position: absolute;
-                 
-                 right: 26%;
-                 bottom: 27%;
-                  animation: updown, zoomInOut 2s linear infinite;
-             }
-
-             .app {
-                 position: absolute;
-                  
-                 right: 40%;
-                 top: 11%;
-                  animation: updown, zoomInOut 2s linear infinite;
-             }
-
-             .customSoftware {
-                 position: absolute;
-                  
-                 left: 35%;
-                 top: 11%;
-                  animation: updown, zoomInOut 2s linear infinite;
-             }
-
-             .graphics {
-                 position: absolute;
-                 
-                 left: 23%;
-                 top: 29%;
-                  animation: updown 0.4s linear infinite, zoomInOut 2s linear infinite;
-             }
-
-             .web {
-                 position: absolute;
-                 
-                 left: 23%;
-                 bottom: 27%;
-                  animation: updown, zoomInOut 2s linear infinite;
+                 height: 130px;
+                 width: 130px;
+                 background: linear-gradient(45deg, #FF5722, #ffce00);
+                 border-radius: 50%;
+                 right: -68px;
+                 bottom: 36%;
+                 display: flex;
+                 text-transform: capitalize;
+                 align-items: center;
+                 justify-content: center;
+                 text-align: center;
+                 font-weight: bold;
+                 color: #ffffff;
+                 text-shadow: 1px 2px 1px black;
+                 line-height: 1.2;
+                 font-size: 1.2rem;
+                 outline: 6px solid #ffffff;
+                 z-index: 2;
+                 animation: fadeInScale 12s ease-in-out backwards infinite;
+                 opacity: 0;
+                 animation-delay: 0s;
              }
 
              .seo {
-                 position: absolute;
-                 
-                 right: 26%;
-                 top: 28%;
-                 animation: updown, zoomInOut 2s linear infinite;
+                 @extend .ecommerce;
+                 right: 22px;
+                 bottom: 77%;
+                 background: linear-gradient(282deg, #9862f8, #4a1f96);
+                 animation-delay: 2s;
+             }
+
+             .graphics {
+                 @extend .ecommerce;
+                 left: 22px;
+                 bottom: 77%;
+                 background: linear-gradient(238deg, #F44336, #560600);
+                 animation-delay: 4s;
+             }
+
+             .app {
+                 @extend .ecommerce;
+                 left: -68px;
+                 bottom: 36%;
+                 background: linear-gradient(238deg, #2196F3, #0b1754);
+                 animation-delay: 6s;
+             }
+
+             .customSoftware {
+                 @extend .ecommerce;
+                 left: 29px;
+                 bottom: -6%;
+                 background: linear-gradient(97deg, #ffffff, #6a6767);
+                 animation-delay: 8s;
+             }
+
+
+
+             .web {
+                 @extend .ecommerce;
+                 right: 28px;
+                 bottom: -6%;
+                 background: linear-gradient(97deg, #4c854e, #385239);
+                 animation-delay: 10s;
              }
 
              .monitor {
                  width: 700px;
                  top: 30px;
                  position: relative;
-                animation: zoomInOut 4s linear infinite;
              }
          }
      }
@@ -679,12 +668,65 @@
      }
  }
 
- 
-   @keyframes zoomInOut {
-     0%{transform: scale(1);}
-     50%{transform: scale(1.05);}
-     100%{transform: scale(1);}
-   }
+ @keyframes changeColor {
+    0%{
+        background: #ffffff;
+    }
+    15%{
+        background: #e6afaf;
+    }
+    30%{
+        background: #c2a8c9;
+    }
+    45%{
+        background: #b7cad3;
+    }
+    60%{
+        background: #bad6c8;
+    }
+    75%{
+        background: #a3aece;
+    }
+    100%{
+        background: #ffffff;
+    }
+     
+ }
+
+ @keyframes blink {
+    0%{
+        transform:scale(0.9);
+    }
+    50%{
+        transform: scale(1.06);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+ }
+
+
+ @keyframes fadeInScale {
+     0% {
+         opacity: 0;
+         transform: scale(0.5);
+     }
+
+     10% {
+         opacity: 1;
+         transform: scale(1);
+     }
+
+     90% {
+         opacity: 1;
+         transform: scale(1);
+     }
+
+     100% {
+         opacity: 0;
+         transform: scale(0.5);
+     }
+ }
 
  //  skills 
 
