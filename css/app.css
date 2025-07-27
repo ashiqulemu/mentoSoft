@@ -166,6 +166,11 @@ body::-webkit-scrollbar-thumb {
   right: 0;
   bottom: 0;
 }
+@media (max-width: 650px) {
+  .hero #videoAdjust {
+    transform: scale(4.2);
+  }
+}
 .hero .hero-content {
   position: relative;
   z-index: 2;
@@ -178,7 +183,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media (max-width: 1023px) {
   .hero {
-    min-height: auto;
+    min-height: 100vh;
   }
 }
 .hero .hero-left {
@@ -445,6 +450,12 @@ section.default.what-we-do .inner {
   background: #FFffff;
   animation: changeColor 32s linear infinite;
 }
+@media (max-width: 650px) {
+  section.default.what-we-do .inner {
+    width: 300px;
+    height: 300px;
+  }
+}
 section.default.what-we-do .inner .circle {
   width: 400px;
   height: 400px;
@@ -454,6 +465,12 @@ section.default.what-we-do .inner .circle {
   background-size: contain;
   background-position: center center;
   animation: blink 10s linear infinite;
+}
+@media (max-width: 650px) {
+  section.default.what-we-do .inner .circle {
+    width: 200px;
+    height: 200px;
+  }
 }
 section.default.what-we-do .inner .ecommerce, section.default.what-we-do .inner .web, section.default.what-we-do .inner .customSoftware, section.default.what-we-do .inner .app, section.default.what-we-do .inner .graphics, section.default.what-we-do .inner .seo {
   position: absolute;
@@ -480,6 +497,14 @@ section.default.what-we-do .inner .ecommerce, section.default.what-we-do .inner 
   opacity: 0;
   animation-delay: 0s;
 }
+@media (max-width: 650px) {
+  section.default.what-we-do .inner .ecommerce, section.default.what-we-do .inner .web, section.default.what-we-do .inner .customSoftware, section.default.what-we-do .inner .app, section.default.what-we-do .inner .graphics, section.default.what-we-do .inner .seo {
+    width: 90px;
+    height: 90px;
+    font-size: 14px;
+    right: -40px;
+  }
+}
 section.default.what-we-do .inner .seo {
   right: 22px;
   bottom: 77%;
@@ -497,6 +522,11 @@ section.default.what-we-do .inner .app {
   bottom: 36%;
   background: linear-gradient(238deg, #2196F3, #0b1754);
   animation-delay: 6s;
+}
+@media (max-width: 650px) {
+  section.default.what-we-do .inner .app {
+    left: -40px;
+  }
 }
 section.default.what-we-do .inner .customSoftware {
   left: 29px;
@@ -519,7 +549,7 @@ section.default.portfolio {
   background-color: #222539;
 }
 section.default.testimonial-section {
-  padding: 90px 0;
+  padding: 80px 0;
 }
 section.default.testimonial-section small {
   font-weight: bold;
@@ -529,7 +559,6 @@ section.default.testimonial-section small {
 section.default.testimonial-section .secTtile {
   font-size: 30px;
   text-transform: capitalize;
-  font-family: "OpenSans-Bold";
 }
 section.default.contact-section {
   padding: 90px 0;
@@ -881,14 +910,16 @@ section.default.contact-section .secTtile {
 }
 
 .testimonial-section {
-  background: url("../images/testimonials.jpg");
+  background-image: url("../images/pastel-pink-oil-paint-textured-background.jpg");
   background-size: 100% 100%;
   padding: 100px 0;
+  overflow: hidden;
 }
 .testimonial-section .testimonial .blogBox {
   transition: all 0.4s ease;
   border-radius: 15px;
-  background: linear-gradient(360deg, #FF6D33 -37%, transparent);
+  background: url(../images/pattern-1.svg), linear-gradient(360deg, #ff6d33 -19%, rgba(8, 7, 7, 0.9215686275) 70%);
+  background-position: 50% 67%;
 }
 .testimonial-section .testimonial .blogBox .content {
   padding: 34px;
