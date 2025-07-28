@@ -36,6 +36,10 @@ html {
   background: #FF6D33;
 }
 
+.text-ternary {
+  color: #FF6D33;
+}
+
 body {
   overflow-x: hidden;
   font-size: 18px;
@@ -48,6 +52,17 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   border-radius: 50px;
   background: #FF6D33;
+}
+
+.project-details {
+  background: url("../images/bg1.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.titleBar {
+  background: linear-gradient(45deg, rgba(3, 67, 249, 0.0901960784), rgba(244, 118, 4, 0.3411764706));
 }
 
 .top-bar {
@@ -279,15 +294,44 @@ body::-webkit-scrollbar-thumb {
 }
 
 .photoHolder {
-  height: 185px;
+  height: 220px;
   overflow: hidden;
 }
 .photoHolder img {
   width: 100%;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.photoHolder .project-name {
+  padding: 10px 15px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  position: absolute;
+  z-index: 2;
+  color: #fff !important;
+  background: linear-gradient(45deg, rgba(21, 14, 13, 0.9), rgba(108, 61, 34, 0.72));
+  transition: all 0.4s ease-in-out;
+  transform: scale(0);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.photoHolder .project-name a {
+  text-decoration: none;
+  color: #fff;
+}
+.photoHolder:hover .project-name {
+  transform: scale(1);
+}
+.photoHolder:hover .project-name a {
+  border: 2px solid #ffffff;
+  background: rgba(60, 36, 29, 0.7490196078);
 }
 .photoHolder:hover img {
   transition: all 8s ease-in-out;
-  transform: translateY(calc(-100% + 185px));
 }
 
 .btn-theme {
@@ -320,6 +364,8 @@ body::-webkit-scrollbar-thumb {
 .btn-theme:hover {
   transform: translateY(-2px);
   color: #FFffff;
+  background: #ffffff;
+  color: #FF6D33;
 }
 
 .paragraph {
@@ -358,20 +404,19 @@ section.default {
   padding: 80px 0;
   overflow-x: hidden;
 }
-section.default.services, section.default.portfolio {
+section.default.services, section.default.products {
   background: #ff5411;
 }
-section.default.services small, section.default.portfolio small {
+section.default.services small, section.default.products small {
   color: #FF6D33;
   text-transform: uppercase;
   font-weight: bold;
 }
-section.default.services .secTtile, section.default.portfolio .secTtile {
+section.default.services .secTtile, section.default.products .secTtile {
   font-size: 30px;
   text-transform: capitalize;
-  font-family: "OpenSans-Bold";
 }
-section.default.services .items, section.default.portfolio .items {
+section.default.services .items, section.default.products .items {
   text-align: center;
   padding: 40px 30px;
   margin-top: 22px;
@@ -379,27 +424,27 @@ section.default.services .items, section.default.portfolio .items {
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
 }
-section.default.services .items .iconify, section.default.portfolio .items .iconify {
+section.default.services .items .iconify, section.default.products .items .iconify {
   color: #FF6D33;
   font-size: 4rem;
   margin-bottom: 25px;
 }
-section.default.services .items h4, section.default.portfolio .items h4 {
+section.default.services .items h4, section.default.products .items h4 {
   font-size: 20px;
   margin-bottom: 16px;
   text-transform: capitalize;
   font-family: "OpenSans-Medium";
 }
-section.default.services .items:hover, section.default.portfolio .items:hover {
+section.default.services .items:hover, section.default.products .items:hover {
   background: #FF6D33;
 }
-section.default.services .items:hover .iconify, section.default.portfolio .items:hover .iconify {
+section.default.services .items:hover .iconify, section.default.products .items:hover .iconify {
   color: #FFffff;
 }
-section.default.services .items:hover .paragraph, section.default.portfolio .items:hover .paragraph {
+section.default.services .items:hover .paragraph, section.default.products .items:hover .paragraph {
   color: #FFffff;
 }
-section.default.services .items:hover h4, section.default.portfolio .items:hover h4 {
+section.default.services .items:hover h4, section.default.products .items:hover h4 {
   color: #FFffff;
 }
 section.default.choose-us {
@@ -545,8 +590,11 @@ section.default.what-we-do .inner .monitor {
   top: 30px;
   position: relative;
 }
-section.default.portfolio {
-  background-color: #222539;
+section.default.products {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.84), rgba(46, 30, 8, 0.83)), url(../images/pexels-fauxels-3184292.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 section.default.testimonial-section {
   padding: 80px 0;
@@ -891,22 +939,8 @@ section.default.contact-section .secTtile {
   transition: all 0.4s ease-in-out;
 }
 .card-style:hover {
-  transform: translateY(-5px);
-}
-.card-style .project-name {
-  padding: 10px 15px;
-  font-weight: 600;
-  text-align: center;
-  text-transform: capitalize;
-  font-family: "OpenSans-Bold";
-  position: relative;
-  z-index: 2;
-  color: #fff !important;
-  background-color: #FF6D33;
-}
-.card-style .project-name a {
-  text-decoration: none;
-  color: #fff;
+  background: #FF6D33 !important;
+  color: #FFffff;
 }
 
 .testimonial-section {
