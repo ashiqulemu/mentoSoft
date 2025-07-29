@@ -791,11 +791,15 @@
              z-index: 1;
              background: linear-gradient(48deg, #8f1d57d9, #ff57226b);
              color: #fff;
+             text-decoration: none;
              animation: letterSpacing 3s linear infinite;
-             border-radius: 3px;
+             border-radius: 32px;
              box-shadow: 0px 0px 0px 3px #b1adad;
              text-align: center;
              font-size: 1.5rem;
+             &:hover{
+                background: $ternary;
+             }
          }
 
          .one {

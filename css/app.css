@@ -653,11 +653,15 @@ section.default.contact-section .secTtile {
   z-index: 1;
   background: linear-gradient(48deg, rgba(143, 29, 87, 0.8509803922), rgba(255, 87, 34, 0.4196078431));
   color: #fff;
+  text-decoration: none;
   animation: letterSpacing 3s linear infinite;
-  border-radius: 3px;
+  border-radius: 32px;
   box-shadow: 0px 0px 0px 3px #b1adad;
   text-align: center;
   font-size: 1.5rem;
+}
+.our-products .innerbox .productitle:hover {
+  background: #FF6D33;
 }
 .our-products .innerbox .one {
   position: absolute;
