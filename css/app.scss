@@ -946,11 +946,17 @@
  @keyframes receivable {
      0% {
          transform: translate(0, 0);
+         opacity: 0;
+     }
+
+     40%{
+         opacity: 1;
      }
 
      100% {
          right: 12%;
          top: 26%;
+        
      }
  }
 
@@ -958,11 +964,17 @@
  @keyframes payroll {
      0% {
          transform: translate(0, 0);
+         opacity: 0;
+     }
+
+     40%{
+         opacity: 1;
      }
 
      100% {
          right: 10%;
          bottom: 7%;
+        
      }
  }
 
@@ -970,33 +982,51 @@
  @keyframes inventory {
      0% {
          transform: translate(0, 0);
+         opacity: 0;
+     }
+
+     40%{
+         opacity: 1;
      }
 
      100% {
          left: 7%;
          bottom: 7%;
+        
      }
  }
 
  @keyframes payable {
      0% {
          transform: translate(0, 0);
+         opacity: 0;
      }
+
+    40%{
+          opacity: 1;;
+    }
 
      100% {
          left: 18%;
-         bottom: 24%;
+         bottom: 24%
+       
      }
  }
 
  @keyframes tax {
      0% {
          transform: translate(0, 0);
+         opacity: 0;
+     }
+
+     40%{
+         opacity: 1;
      }
 
      100% {
          right: 17%;
          top: 66%;
+        
      }
  }
 
@@ -1004,33 +1034,51 @@
      0% {
          left: 37%;
          top: 44%;
+         opacity: 0;
+     }
+
+     40%{
+         opacity: 1;
      }
 
      100% {
          left: 8%;
          top: 7%;
+        
      }
  }
 
  @keyframes ledger {
      0% {
          transform: translate(0, 0);
+         opacity: 0;
+     }
+
+     40%{
+         opacity: 1;
      }
 
      100% {
          right: 8%;
          top: 8%;
+        
      }
  }
 
  @keyframes banking {
      0% {
          transform: translate(0, 0);
+         opacity: 0;
+     }
+
+     40%{
+         opacity: 1;
      }
 
      100% {
          left: 18%;
          top: 26%;
+        
      }
  }
 

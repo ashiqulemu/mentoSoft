@@ -790,6 +790,10 @@ section.default.contact-section .secTtile {
 @keyframes receivable {
   0% {
     transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
   }
   100% {
     right: 12%;
@@ -799,6 +803,10 @@ section.default.contact-section .secTtile {
 @keyframes payroll {
   0% {
     transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
   }
   100% {
     right: 10%;
@@ -808,6 +816,10 @@ section.default.contact-section .secTtile {
 @keyframes inventory {
   0% {
     transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
   }
   100% {
     left: 7%;
@@ -817,6 +829,10 @@ section.default.contact-section .secTtile {
 @keyframes payable {
   0% {
     transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
   }
   100% {
     left: 18%;
@@ -826,6 +842,10 @@ section.default.contact-section .secTtile {
 @keyframes tax {
   0% {
     transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
   }
   100% {
     right: 17%;
@@ -836,6 +856,10 @@ section.default.contact-section .secTtile {
   0% {
     left: 37%;
     top: 44%;
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
   }
   100% {
     left: 8%;
@@ -845,6 +869,10 @@ section.default.contact-section .secTtile {
 @keyframes ledger {
   0% {
     transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
   }
   100% {
     right: 8%;
@@ -854,6 +882,10 @@ section.default.contact-section .secTtile {
 @keyframes banking {
   0% {
     transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
   }
   100% {
     left: 18%;
