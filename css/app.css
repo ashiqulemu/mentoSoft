@@ -29,7 +29,7 @@ html {
 }
 
 .title-font {
-  font-family: "titilliumweb";
+  font-family: "titilliumweb" !important;
 }
 
 .bg-ternary {
@@ -38,6 +38,12 @@ html {
 
 .text-ternary {
   color: #FF6D33;
+}
+
+.form-style {
+  background: rgba(219, 206, 196, 0.1215686275);
+  padding: 30px;
+  border-radius: 14px;
 }
 
 body {
@@ -1236,26 +1242,31 @@ section.default.contact-section .secTtile {
 }
 
 .contact-section {
-  background-color: #ff5411;
+  background: #0c1d4d;
+  background: linear-gradient(61deg, rgb(12, 29, 77) 46%, rgb(255, 163, 15) 94%);
 }
 .contact-section .form-group {
-  margin: 8px 0;
+  margin: 13px 0;
 }
 .contact-section .form-control {
   background: transparent;
-  border: 1px solid #747474;
+  border-bottom: 3px solid #fff;
   color: rgb(143, 143, 143);
+  border: 0;
+  border-bottom: 1px solid #fff;
+  border-radius: 0;
+  padding-left: 0;
+  color: #FFffff;
 }
 .contact-section .form-control::-moz-placeholder {
-  color: rgb(143, 143, 143);
+  color: rgb(204, 204, 204);
 }
 .contact-section .form-control::placeholder {
-  color: rgb(143, 143, 143);
+  color: rgb(204, 204, 204);
 }
 .contact-section .form-control:focus {
-  color: #fff;
-  border-color: #FF6D33;
-  box-shadow: 0 0 1px 0.3rem rgba(253, 13, 13, 0.2509803922);
+  outline: 0;
+  box-shadow: none;
 }
 .contact-section .form-control:focus::-moz-placeholder {
   color: #fff;
