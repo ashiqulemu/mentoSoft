@@ -1531,11 +1531,96 @@
      }
  }
 
+ .partners {
+     padding: 60px 0;
+ }
+
+ // faq 
+ .faq {
+     padding: 60px 0;
+     background: linear-gradient(45deg, rgb(255 221 170 / 90%), #c4c6a3), url(../images/faq_bg.png);
+     background-size: contain;
+     background-attachment: fixed;
+ }
+
+ .accordion-button:not(.collapsed),
+ .accordion-button:focus {
+     outline: none;
+     border-color: transparent;
+     box-shadow: none;
+     background-color: transparent;
+     color: $ternary;
+ }
+
+ .accordion-button::after {
+     width: 11px;
+     height: 11px;
+     border-radius: 100%;
+     background-color: $ternary;
+     background-image: none !important;
+ }
+
+ .accordion-button.collapsed::after {
+     background-color: var(--bs-gray-300);
+ }
+
+
+
+
+ .modules {
+     background: linear-gradient(45deg, rgba(255, 187, 136, 0.5607843137), rgb(255 246 210 / 87%)), url(../images/light-blue-overlay.jpg);
+     padding: 60px 0;
+     background-size: cover;
+     background-position: 80% 80%;
+     background-attachment: fixed;
+
+     .module-box {
+         position: relative;
+         background: #ffffff9c;
+         transition: transform 0.4s ease-in-out;
+
+         &:hover {
+             cursor: default;
+             transform: translateY(-5px);
+             background: $ternary;
+             color: $white;
+
+             iconify-icon {
+                 color: #fff;
+             }
+
+             p {
+                 color: $white !important;
+             }
+         }
+     }
+ }
+
+ .about-us {
+     padding: 60px 0;
+
+     .video-bloger {
+        transition: transform 0.4s ease-in-out;
+         .name {
+             text-align: center;
+             background: #FF6D33;
+             color: #fff;
+             padding: 10px 10px;
+             margin-top: -7px;
+         }
+          &:hover {
+             cursor: default;
+             transform: translateY(-5px); 
+         }
+     }
+ }
+
  // CTA 
 
  .cta {
-    padding:80px 0 ;
-    background: aliceblue;
+     padding: 80px 0;
+     background: aliceblue;
+
      .inner {
          display: flex;
          align-items: center;

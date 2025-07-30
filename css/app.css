@@ -1241,6 +1241,81 @@ section.default.contact-section .secTtile {
   transform: translateY(-5px);
 }
 
+.partners {
+  padding: 60px 0;
+}
+
+.faq {
+  padding: 60px 0;
+  background: linear-gradient(45deg, rgba(255, 221, 170, 0.9), #c4c6a3), url(../images/faq_bg.png);
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: none;
+  background-color: transparent;
+  color: #FF6D33;
+}
+
+.accordion-button::after {
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
+  background-color: #FF6D33;
+  background-image: none !important;
+}
+
+.accordion-button.collapsed::after {
+  background-color: var(--bs-gray-300);
+}
+
+.modules {
+  background: linear-gradient(45deg, rgba(255, 187, 136, 0.5607843137), rgba(255, 246, 210, 0.87)), url(../images/light-blue-overlay.jpg);
+  padding: 60px 0;
+  background-size: cover;
+  background-position: 80% 80%;
+  background-attachment: fixed;
+}
+.modules .module-box {
+  position: relative;
+  background: rgba(255, 255, 255, 0.6117647059);
+  transition: transform 0.4s ease-in-out;
+}
+.modules .module-box:hover {
+  cursor: default;
+  transform: translateY(-5px);
+  background: #FF6D33;
+  color: #FFffff;
+}
+.modules .module-box:hover iconify-icon {
+  color: #fff;
+}
+.modules .module-box:hover p {
+  color: #FFffff !important;
+}
+
+.about-us {
+  padding: 60px 0;
+}
+.about-us .video-bloger {
+  transition: transform 0.4s ease-in-out;
+}
+.about-us .video-bloger .name {
+  text-align: center;
+  background: #FF6D33;
+  color: #fff;
+  padding: 10px 10px;
+  margin-top: -7px;
+}
+.about-us .video-bloger:hover {
+  cursor: default;
+  transform: translateY(-5px);
+}
+
 .cta {
   padding: 80px 0;
   background: aliceblue;
