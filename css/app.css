@@ -1316,6 +1316,38 @@ section.default.contact-section .secTtile {
   transform: translateY(-5px);
 }
 
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+  white-space: nowrap;
+  position: relative;
+}
+.marquee-container .marquee {
+  display: inline-flex;
+  animation: marquee 20s linear infinite;
+  color: #fff;
+  gap: 10px;
+}
+.marquee-container .marquee div {
+  text-align: center;
+  font-size: 20px;
+  white-space: nowrap;
+  width: 150px;
+  background: lightgrey;
+}
+.marquee-container .marquee div img {
+  width: 100%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 .cta {
   padding: 80px 0;
   background: aliceblue;
