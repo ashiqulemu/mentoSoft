@@ -370,7 +370,7 @@ body::-webkit-scrollbar-thumb {
 .btn-theme:hover {
   transform: translateY(-2px);
   color: #FFffff;
-  background: #ffffff;
+  background: #333333;
   color: #FF6D33;
 }
 
@@ -596,12 +596,6 @@ section.default.what-we-do .inner .monitor {
   top: 30px;
   position: relative;
 }
-section.default.portfolio {
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.84), rgba(46, 30, 8, 0.83)), url(../images/pexels-fauxels-3184292.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 section.default.testimonial-section {
   padding: 80px 0;
 }
@@ -626,6 +620,19 @@ section.default.contact-section .secTtile {
   font-size: 30px;
   text-transform: capitalize;
   font-family: "OpenSans-Bold";
+}
+
+.portfolio {
+  background: #ECEBE9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.portfolio .portfolio-card {
+  transition: transform 0.3s ease-in-out;
+}
+.portfolio .portfolio-card:hover {
+  transform: scale(1.04);
 }
 
 .our-products {

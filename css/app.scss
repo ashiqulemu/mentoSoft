@@ -444,7 +444,7 @@
      &:hover {
          transform: translateY(-2px);
          color: $white;
-         background: #ffffff;
+         background: #333333;
          color: $ternary;
      }
  }
@@ -722,14 +722,7 @@
          }
      }
 
-     &.portfolio {
-         @extend .services;
-         background: linear-gradient(45deg, rgb(0 0 0 / 84%), rgb(46 30 8 / 83%)), url(../images/pexels-fauxels-3184292.jpg);
-         background-size: cover;
-         background-repeat: no-repeat;
-         background-attachment: fixed;
-
-     }
+    
 
      &.testimonial-section {
          padding: 80px 0;
@@ -764,6 +757,22 @@
          }
      }
  }
+
+  .portfolio {
+         @extend .services;
+         background: #ECEBE9;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+
+         .portfolio-card{
+            transition: transform 0.3s ease-in-out;
+            &:hover{
+                transform: scale(1.04);
+            }
+         }
+
+     }
 
  .our-products {
      background: linear-gradient(48deg, #ff71478f, #b7d3e8);
