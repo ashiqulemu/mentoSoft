@@ -702,8 +702,7 @@ section.default.contact-section .secTtile {
   background: linear-gradient(291deg, rgba(0, 0, 0, 0), rgba(66, 43, 43, 0), rgba(57, 12, 136, 0.1411764706));
   color: #fff;
   text-decoration: none;
-  animation: letterSpacing 3s linear infinite;
-  box-shadow: -1px 0px 57px 27px rgba(255, 255, 255, 0.53);
+  animation: letterSpacing 8s linear infinite;
   text-align: center;
   font-size: 1.6rem;
   line-height: 1;
@@ -853,13 +852,16 @@ section.default.contact-section .secTtile {
   0% {
     letter-spacing: 0;
     transform: scale(1);
+    box-shadow: -1px 0px 1px 1px rgba(255, 255, 255, 0.53);
   }
   50% {
-    transform: scale(1.05);
+    transform: scale(1.09);
+    box-shadow: -1px 0px 57px 27px rgba(255, 255, 255, 0.53);
   }
   100% {
     letter-spacing: 0;
     transform: scale(1);
+    box-shadow: -1px 0px 1px 1px rgba(255, 255, 255, 0.53);
   }
 }
 @keyframes receivable {
