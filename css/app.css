@@ -732,12 +732,12 @@ section.default.contact-section .secTtile {
   box-shadow: -4px 8px 20px rgba(0, 0, 0, 0.1607843137);
   padding: 4px 8px;
   background: transparent;
-  left: 18%;
-  top: 27%;
+  left: 23%;
+  top: 32%;
   cursor: default;
   background: linear-gradient(238deg, #F44336, #560600);
   border-radius: 4px;
-  animation: cashFlow 5s linear forwards infinite;
+  animation: cashFlow 4s linear forwards infinite;
 }
 .our-products .innerbox .two {
   position: absolute;
@@ -750,7 +750,7 @@ section.default.contact-section .secTtile {
   top: 27%;
   background: linear-gradient(282deg, #9862f8, #4a1f96);
   border-radius: 4px;
-  animation: ledger 5s linear forwards infinite;
+  animation: ledger 4s linear forwards infinite;
   animation-delay: 3s;
 }
 .our-products .innerbox .three {
@@ -760,8 +760,8 @@ section.default.contact-section .secTtile {
   box-shadow: -4px 8px 20px rgba(0, 0, 0, 0.1607843137);
   padding: 4px 8px;
   background: transparent;
-  right: 21%;
-  bottom: 25%;
+  right: 25%;
+  bottom: 31%;
   background: linear-gradient(45deg, #FF5722, #ffce00);
   border-radius: 4px;
   animation: receivable 4s linear forwards infinite;
@@ -774,11 +774,11 @@ section.default.contact-section .secTtile {
   box-shadow: -4px 8px 20px rgba(0, 0, 0, 0.1607843137);
   padding: 4px 8px;
   background: transparent;
-  left: 21%;
-  bottom: 25%;
+  left: 26%;
+  bottom: 30%;
   background: linear-gradient(238deg, #2196F3, #0b1754);
   border-radius: 4px;
-  animation: payable 5s linear forwards infinite;
+  animation: payable 4s linear forwards infinite;
   animation-delay: 4s;
 }
 .our-products .innerbox .five {
@@ -788,11 +788,11 @@ section.default.contact-section .secTtile {
   box-shadow: -4px 8px 20px rgba(0, 0, 0, 0.1607843137);
   padding: 4px 8px;
   background: transparent;
-  left: 41%;
-  top: 24%;
+  left: 42%;
+  top: 30%;
   background: linear-gradient(97deg, #4c854e, #385239);
   border-radius: 4px;
-  animation: banking 5s linear forwards infinite;
+  animation: banking 4s linear forwards infinite;
   animation-delay: 5s;
 }
 .our-products .innerbox .six {
@@ -802,11 +802,11 @@ section.default.contact-section .secTtile {
   box-shadow: -4px 8px 20px rgba(0, 0, 0, 0.1607843137);
   padding: 4px 8px;
   background: transparent;
-  left: 41%;
-  bottom: 23%;
+  left: 42%;
+  bottom: 30%;
   background: linear-gradient(48deg, rgba(122, 29, 143, 0.8901960784), rgba(43, 19, 179, 0.9843137255));
   border-radius: 4px;
-  animation: inventory 5s linear forwards infinite;
+  animation: inventory 4s linear forwards infinite;
   animation-delay: 6s;
 }
 .our-products .innerbox .seven {
@@ -816,11 +816,11 @@ section.default.contact-section .secTtile {
   box-shadow: -4px 8px 20px rgba(0, 0, 0, 0.1607843137);
   padding: 4px 8px;
   background: transparent;
-  right: 11%;
-  bottom: 43%;
+  right: 18%;
+  bottom: 46%;
   background: linear-gradient(97deg, #75ffaf, #086e5d);
   border-radius: 4px;
-  animation: payroll 5s linear forwards infinite;
+  animation: payroll 4s linear forwards infinite;
   animation-delay: 7s;
 }
 .our-products .innerbox .eight {
@@ -830,11 +830,11 @@ section.default.contact-section .secTtile {
   box-shadow: -4px 8px 20px rgba(0, 0, 0, 0.1607843137);
   padding: 4px 8px;
   background: transparent;
-  left: 15%;
-  top: 42%;
+  left: 18%;
+  top: 45%;
   background: linear-gradient(48deg, rgba(191, 20, 230, 0.86), rgb(85, 2, 124));
   border-radius: 4px;
-  animation: tax 5s linear forwards infinite;
+  animation: tax 4s linear forwards infinite;
   animation-delay: 8s;
 }
 
@@ -855,7 +855,7 @@ section.default.contact-section .secTtile {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.05);
   }
   100% {
     letter-spacing: 0;
@@ -864,112 +864,112 @@ section.default.contact-section .secTtile {
 }
 @keyframes receivable {
   0% {
-    right: 21%;
-    bottom: 25%;
+    right: 25%;
+    bottom: 31%;
     opacity: 0;
   }
   40% {
     opacity: 1;
   }
   100% {
-    right: 2%;
-    bottom: 2%;
+    right: 13%;
+    bottom: 17%;
     opacity: 0;
   }
 }
 @keyframes payroll {
   0% {
-    right: 11%;
-    bottom: 43%;
+    right: 18%;
+    bottom: 46%;
     opacity: 0;
   }
   40% {
     opacity: 1;
   }
   100% {
-    right: 1%;
+    right: 8%;
     bottom: 43%;
     opacity: 0;
   }
 }
 @keyframes inventory {
   0% {
-    left: 41%;
-    bottom: 23%;
+    left: 42%;
+    bottom: 30%;
     opacity: 0;
   }
   40% {
     opacity: 1;
   }
   100% {
-    left: 41%;
-    bottom: 2%;
+    left: 43%;
+    bottom: 12%;
     opacity: 0;
   }
 }
 @keyframes payable {
   0% {
-    left: 21%;
-    bottom: 25%;
+    left: 26%;
+    bottom: 30%;
     opacity: 0;
   }
   40% {
     opacity: 1;
   }
   100% {
-    left: 2%;
-    bottom: 2%;
+    left: 18%;
+    bottom: 16%;
     opacity: 0;
   }
 }
 @keyframes tax {
   0% {
-    left: 15%;
-    top: 42%;
+    left: 18%;
+    top: 45%;
     opacity: 0;
   }
   40% {
     opacity: 1;
   }
   100% {
-    left: 2%;
     top: 42%;
     opacity: 0;
+    left: 9%;
   }
 }
 @keyframes cashFlow {
   0% {
-    left: 18%;
-    top: 27%;
+    left: 23%;
+    top: 32%;
     opacity: 0;
   }
   40% {
     opacity: 1;
   }
   100% {
-    left: 2%;
-    top: 2%;
+    left: 13%;
+    top: 19%;
     opacity: 0;
   }
 }
 @keyframes ledger {
   0% {
-    right: 18%;
-    top: 27%;
+    right: 23%;
+    top: 32%;
   }
   40% {
     opacity: 1;
   }
   100% {
-    right: 2%;
-    top: 2%;
+    right: 13%;
+    top: 19%;
     opacity: 0;
   }
 }
 @keyframes banking {
   0% {
-    left: 41%;
-    top: 24%;
+    left: 42%;
+    top: 30%;
     opacity: 0;
   }
   40% {
@@ -977,7 +977,7 @@ section.default.contact-section .secTtile {
   }
   100% {
     left: 41%;
-    top: 2%;
+    top: 13%;
     opacity: 0;
   }
 }
