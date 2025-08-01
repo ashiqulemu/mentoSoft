@@ -844,15 +844,15 @@
          }
 
          .productitle {
-             padding: 22px 68px;
+             padding: 20px 35px;
              border: 4px solid #ffffff;
              position: relative;
              z-index: 1;
-            //  background: linear-gradient(291deg, #250b53, #6eddd3, #390c88);
+             //  background: linear-gradient(291deg, #250b53, #6eddd3, #390c88);
              background: linear-gradient(291deg, #00000000, #422b2b00, #390c8824);
              color: #fff;
              text-decoration: none;
-             animation: letterSpacing 3s linear infinite, playOpacity 10s linear infinite;
+             animation: letterSpacing 3s linear infinite;
              box-shadow: -1px 0px 57px 27px rgba(255, 255, 255, 0.53);
              text-align: center;
              font-size: 1.6rem;
@@ -865,16 +865,16 @@
          }
 
          div {
-             width: 126px;
-             height: 82px;
-             border-radius: 56% !important;
+             width: 115px;
+             height: 54px;
+             border-radius: 31px !important;
              display: flex;
              align-items: center;
              justify-content: center;
              text-align: center;
              color: #fff;
              padding: 9px 12px !important;
-             font-size: 19px !important;
+             font-size: 21px !important;
              line-height: 1;
          }
 
@@ -885,8 +885,8 @@
              box-shadow: -4px 8px 20px #00000029;
              padding: 4px 8px;
              background: transparent;
-             left: 37%;
-             top: 44%;
+             left: 18%;
+             top: 27%;
              cursor: default;
              background: linear-gradient(238deg, #F44336, #560600);
              border-radius: 4px;
@@ -902,12 +902,12 @@
              box-shadow: -4px 8px 20px #00000029;
              padding: 4px 8px;
              background: transparent;
-             right: 50%;
-             top: 46%;
+             right: 18%;
+             top: 27%;
              background: linear-gradient(282deg, #9862f8, #4a1f96);
              border-radius: 4px;
              animation: ledger 5s linear forwards infinite;
-             animation-delay: 2s;
+             animation-delay: 3s;
          }
 
          .three {
@@ -917,12 +917,12 @@
              box-shadow: -4px 8px 20px #00000029;
              padding: 4px 8px;
              background: transparent;
-             right: 40%;
-             top: 46%;
+             right: 21%;
+             bottom: 25%;
              background: linear-gradient(45deg, #FF5722, #ffce00);
              border-radius: 4px;
-             animation: receivable 5s linear forwards infinite;
-             animation-delay: 3s;
+             animation: receivable 4s linear forwards infinite;
+             animation-delay: 5s;
          }
 
          .four {
@@ -932,8 +932,8 @@
              box-shadow: -4px 8px 20px #00000029;
              padding: 4px 8px;
              background: transparent;
-             left: 41%;
-             bottom: 45%;
+             left: 21%;
+             bottom: 25%;
              background: linear-gradient(238deg, #2196F3, #0b1754);
              border-radius: 4px;
              animation: payable 5s linear forwards infinite;
@@ -947,8 +947,8 @@
              box-shadow: -4px 8px 20px #00000029;
              padding: 4px 8px;
              background: transparent;
-             left: 45%;
-             top: 44%;
+             left: 41%;
+             top: 24%;
              background: linear-gradient(97deg, #4c854e, #385239);
              border-radius: 4px;
              animation: banking 5s linear forwards infinite;
@@ -964,7 +964,7 @@
              padding: 4px 8px;
              background: transparent;
              left: 41%;
-             bottom: 45%;
+             bottom: 23%;
              background: linear-gradient(48deg, #7a1d8fe3, #2b13b3fb);
              border-radius: 4px;
              animation: inventory 5s linear forwards infinite;
@@ -978,8 +978,8 @@
              box-shadow: -4px 8px 20px #00000029;
              padding: 4px 8px;
              background: transparent;
-             right: 42%;
-             bottom: 45%;
+             right: 11%;
+             bottom: 43%;
              background: linear-gradient(97deg, #75ffaf, #086e5d);
              border-radius: 4px;
              animation: payroll 5s linear forwards infinite;
@@ -993,8 +993,8 @@
              box-shadow: -4px 8px 20px #00000029;
              padding: 4px 8px;
              background: transparent;
-             right: 45%;
-             top: 45%;
+             left: 15%;
+             top: 42%;
              background: linear-gradient(48deg, rgb(191 20 230 / 86%), rgb(85 2 124));
              border-radius: 4px;
              animation: tax 5s linear forwards infinite;
@@ -1024,22 +1024,27 @@
  @keyframes letterSpacing {
      0% {
          letter-spacing: 0;
+          transform: scale(1);
      }
 
      50% {
-         letter-spacing: 1px;
+        //  letter-spacing: 1px;
+         transform: scale(1.2);
      }
 
      100% {
          letter-spacing: 0;
+          transform: scale(1);
      }
  }
 
 
  @keyframes receivable {
      0% {
-         transform: translate(0, 0);
+         right: 21%;
+         bottom: 25%;
          opacity: 0;
+         transform: rotate(0);
      }
 
      40% {
@@ -1047,8 +1052,10 @@
      }
 
      100% {
-         right: 12%;
-         top: 26%;
+         right: 2%;
+         bottom: 2%;
+         opacity: 0;
+         transform: rotate(360deg);
 
      }
  }
@@ -1056,8 +1063,10 @@
 
  @keyframes payroll {
      0% {
-         transform: translate(0, 0);
+         right: 11%;
+         bottom: 43%;
          opacity: 0;
+         transform: rotate(0);
      }
 
      40% {
@@ -1065,8 +1074,10 @@
      }
 
      100% {
-         right: 10%;
-         bottom: 7%;
+         right: 1%;
+         bottom: 43%;
+         opacity: 0;
+         transform: rotate(360deg);
 
      }
  }
@@ -1074,8 +1085,10 @@
 
  @keyframes inventory {
      0% {
-         transform: translate(0, 0);
+         left: 41%;
+         bottom: 23%;
          opacity: 0;
+         transform: rotate(0);
      }
 
      40% {
@@ -1083,16 +1096,19 @@
      }
 
      100% {
-         left: 7%;
-         bottom: 7%;
-
+         left: 41%;
+         bottom: 2%;
+         opacity: 0;
+         transform: rotate(360deg);
      }
  }
 
  @keyframes payable {
      0% {
-         transform: translate(0, 0);
+         left: 21%;
+         bottom: 25%;
          opacity: 0;
+         transform: rotate(0);
      }
 
      40% {
@@ -1101,15 +1117,19 @@
      }
 
      100% {
-         left: 18%;
-         bottom: 24%
+         left: 2%;
+         bottom: 2%;
+         opacity: 0;
+         transform: rotate(360deg);
      }
  }
 
  @keyframes tax {
      0% {
-         transform: translate(0, 0);
+         left: 15%;
+         top: 42%;
          opacity: 0;
+         transform: rotate(0);
      }
 
      40% {
@@ -1117,17 +1137,19 @@
      }
 
      100% {
-         right: 17%;
-         top: 66%;
-
+         left: 2%;
+         top: 42%;
+         opacity: 0;
+         transform: rotate(360deg);
      }
  }
 
  @keyframes cashFlow {
      0% {
-         left: 37%;
-         top: 44%;
+         left: 18%;
+         top: 27%;
          opacity: 0;
+         transform: rotate(0);
      }
 
      40% {
@@ -1135,16 +1157,18 @@
      }
 
      100% {
-         left: 8%;
-         top: 7%;
-
+         left: 2%;
+         top: 2%;
+         opacity: 0;
+         transform: rotate(360deg);
      }
  }
 
  @keyframes ledger {
      0% {
-         transform: translate(0, 0);
-         opacity: 0;
+         right: 18%;
+         top: 27%;
+         transform: rotate(0);
      }
 
      40% {
@@ -1152,16 +1176,19 @@
      }
 
      100% {
-         right: 8%;
-         top: 8%;
-
+         right: 2%;
+         top: 2%;
+         opacity: 0;
+         transform: rotate(360deg);
      }
  }
 
  @keyframes banking {
      0% {
-         transform: translate(0, 0);
+         left: 41%;
+         top: 24%;
          opacity: 0;
+         transform: rotate(0);
      }
 
      40% {
@@ -1169,9 +1196,10 @@
      }
 
      100% {
-         left: 18%;
-         top: 26%;
-
+         left: 41%;
+         top: 2%;
+         opacity: 0;
+         transform: rotate(360deg);
      }
  }
 
