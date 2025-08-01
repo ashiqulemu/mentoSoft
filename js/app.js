@@ -1,23 +1,4 @@
 
-
-
-
-var mycls = document.getElementsByClassName('nav-link');
-for (let i = 0; i <= mycls.length; i++) {
-  mycls[i].addEventListener("click", function () {
-    for (var j = 0; j < mycls.length; j++) {
-      mycls[j].classList.remove('active');
-    }
-    this.classList.add('active');
-
-    // in mobile menu it works on collaps the navigation on click a menu item
-    document.getElementById("navbarNavDropdown").classList.remove("show");
-    //----------------------------------------------------------------------
-
-  });
-}
-
-
 // header menu fixed script 
 
 function scroller() {
@@ -34,12 +15,27 @@ function scroller() {
 
 }
 
- 
+
+ var linkbtn = document.getElementsByClassName('link-btn');
+
+       
+            for (let i = 0; i <= linkbtn.length; i++) {
+                linkbtn[i].addEventListener("click", function () {
+                    for (var j = 0; j < linkbtn.length; j++) {
+                        linkbtn[j].classList.remove('active');
+                    }
+                    this.classList.add('active');
+                });
+
+            }
 
 
- 
 
- 
-  
- 
+
+
+
+
+
+
+
 
