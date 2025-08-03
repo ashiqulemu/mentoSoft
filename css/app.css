@@ -756,6 +756,8 @@ section.default.contact-section .secTtile {
   align-items: center;
   justify-content: center;
   text-align: center;
+  z-index: 10;
+  box-shadow: -3px 4px 3px rgba(0, 0, 0, 0.4);
 }
 #demoRequest a {
   line-height: 1.2;
@@ -1586,10 +1588,6 @@ section.default.contact-section .secTtile {
   }
 }
 
-.contact-section {
-  background: #0c1d4d;
-  background: linear-gradient(61deg, rgb(12, 29, 77) 46%, rgb(255, 163, 15) 94%);
-}
 .contact-section .form-group {
   margin: 13px 0;
 }

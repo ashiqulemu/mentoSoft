@@ -927,8 +927,10 @@
      align-items: center;
      justify-content: center;
      text-align: center;
+     z-index: 10;
+     box-shadow: -3px 4px 3px #00000066;
 
-      a {
+     a {
          line-height: 1.2;
          padding: 6px;
          color: #fff;
@@ -1965,8 +1967,8 @@
  // contact
 
  .contact-section {
-     background: #0c1d4d;
-     background: linear-gradient(61deg, rgba(12, 29, 77, 1) 46%, rgba(255, 163, 15, 1) 94%);
+    //  background: #0c1d4d;
+    //  background: linear-gradient(61deg, rgba(12, 29, 77, 1) 46%, rgba(255, 163, 15, 1) 94%);
 
      .form-group {
          margin: 13px 0;
