@@ -102,7 +102,7 @@
                                 <a class="nav-link" href="portfolio.html">portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">Contact</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -237,11 +237,12 @@
         </div>
     </section>
 
-    
-      <section class="cta ">
+
+    <section class="cta ">
         <div class="container">
             <div class="row  px-2  text-center  ">
-                <h2 class="secTtile text-dark text-uppercase fw-bold title-font wow bounce mb-0 wow fadeInUp">our flexible development
+                <h2 class="secTtile text-dark text-uppercase fw-bold title-font wow bounce mb-0 wow fadeInUp">our
+                    flexible development
                     approach</h2>
                 <h5 class="text-center w-75 mx-auto mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Dignissimos blanditiis ea repudiandae voluptatibus vero temporibus? Quas numquam, molestias iusto
@@ -270,38 +271,102 @@
         </div>
     </section>
 
-    <section class="default what-we-do">
+    <section class="default what-we-do position-relative">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center mb-4">
                     <h2 class="secTtile text-light text-uppercase fw-bold title-font wow bounce">What we do?</h2>
                 </div>
             </div>
-            <div class="inner">
-                <div class="circle fadeIn wow "> </div>
-                <div class="ecommerce">
-                    ecommerce <br>
-                    solution
+            <div class="w-100 d-flex">
+                <div class="inner">
+                    <div class="circle fadeIn wow "> </div>
+                    <div class="ecommerce" onclick="openBox('e-commerce')">
+                        ecommerce <br>
+                        solution
+
+                    </div>
+                    <div class="app" onclick="openBox('mobile-app')">
+                        Mobile <br>
+                        Application
+                    </div>
+                    <div class="customSoftware" onclick="openBox('customSoftware')">
+                        Custom <br>
+                        Software
+                    </div>
+                    <div class="graphics" onclick="openBox('graphics')">
+                        graphics <br>
+                        Solution
+                    </div>
+                    <div class="seo" onclick="openBox('seo')">
+                        SEO / <br>
+                        Digital Marketing
+                    </div>
+                    <div class="web" onclick="openBox('web')">
+                        Web Design <br> and <br>
+                        Development
+                    </div>
                 </div>
-                <div class="app">
-                    Mobile <br>
-                    Application
+
+                <div id="ecommerce-box" class="visualBox">
+                    <div class="crossbtn" onclick="closeModule()"><iconify-icon icon="radix-icons:cross-2" width="20"
+                            height="20"></iconify-icon></div>
+                    <p class="bg-dark text-light mt-4 p-2">Ecommerce Module </p>
+                    <iframe width="100%" height="415"
+                        src="https://www.youtube.com/embed/NMC2ijeJkVQ?si=8D9sK3aO1jm-JAAG" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <div class="customSoftware">
-                    Custom <br>
-                    Software
+                <div id="mobile-app" class="visualBox">
+                    <div class="crossbtn" onclick="closeModule()"><iconify-icon icon="radix-icons:cross-2" width="20"
+                            height="20"></iconify-icon></div>
+                    <p class="bg-dark text-light mt-4 p-2">Mobile Application Module</p>
+                    <iframe width="100%" height="415"
+                        src="https://www.youtube.com/embed/NMC2ijeJkVQ?si=8D9sK3aO1jm-JAAG" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <div class="graphics">
-                    graphics <br>
-                    Solution
+                <div id="customSoftware" class="visualBox">
+                    <div class="crossbtn" onclick="closeModule()"><iconify-icon icon="radix-icons:cross-2" width="20"
+                            height="20"></iconify-icon></div>
+                    <p class="bg-dark text-light mt-4 p-2">Custom Software</p>
+                    <iframe width="100%" height="415"
+                        src="https://www.youtube.com/embed/NMC2ijeJkVQ?si=8D9sK3aO1jm-JAAG" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <div class="seo">
-                    SEO / <br>
-                    Digital Marketing
+                <div id="graphics" class="visualBox">
+                    <div class="crossbtn" onclick="closeModule()"><iconify-icon icon="radix-icons:cross-2" width="20"
+                            height="20"></iconify-icon></div>
+                     <p class="bg-dark text-light mt-4 p-2">Graphics Module </p>
+                    <iframe width="100%" height="415"
+                        src="https://www.youtube.com/embed/NMC2ijeJkVQ?si=8D9sK3aO1jm-JAAG" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <div class="web">
-                    Web Design <br> and <br>
-                    Development
+                <div id="seo" class="visualBox">
+                    <div class="crossbtn" onclick="closeModule()"><iconify-icon icon="radix-icons:cross-2" width="20"
+                            height="20"></iconify-icon></div>
+                   <p class="bg-dark text-light mt-4 p-2">SEO Module </p>
+                    <iframe width="100%" height="415"
+                        src="https://www.youtube.com/embed/NMC2ijeJkVQ?si=8D9sK3aO1jm-JAAG" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div id="web" class="visualBox">
+                    <div class="crossbtn" onclick="closeModule()"><iconify-icon icon="radix-icons:cross-2" width="20"
+                            height="20"></iconify-icon></div>
+                    <p class="bg-dark text-light mt-4 p-2">web Module </p>
+                    <iframe width="100%" height="415"
+                        src="https://www.youtube.com/embed/NMC2ijeJkVQ?si=8D9sK3aO1jm-JAAG" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -309,7 +374,7 @@
     </section>
 
 
-       <section class="our-products  ">
+    <section class="our-products">
         <div class="row  px-2  text-center py-5">
             <h2 class="secTtile text-dark text-uppercase fw-bold title-font wow bounce mb-0">our products</h2>
         </div>
@@ -317,9 +382,9 @@
             <div class="col-lg-6">
                 <div class="innerbox accounting">
                     <a href="product-details.html" class="productitle">
-                        
+
                         Accounts <br> management
-                    
+
                     </a>
                     <div class="one fadeInUp wow">cash flow</div>
                     <div class="two">Ledger</div>
@@ -351,9 +416,9 @@
             <div class="col-lg-6">
                 <div class="innerbox accounting">
                     <a href="product-details.html" class="productitle">
-                        
+
                         Accounts <br> management
-                    
+
                     </a>
                     <div class="one fadeInUp wow">cash flow</div>
                     <div class="two">Ledger</div>
@@ -385,9 +450,9 @@
             <div class="col-lg-6">
                 <div class="innerbox accounting">
                     <a href="product-details.html" class="productitle">
-                        
+
                         Accounts <br> management
-                    
+
                     </a>
                     <div class="one fadeInUp wow">cash flow</div>
                     <div class="two">Ledger</div>
@@ -487,9 +552,9 @@
         </div>
     </section>
 
-  
 
- 
+
+
 
 
     <!-- Contact -->
@@ -505,15 +570,18 @@
             <div class="row mt-5">
                 <div class="col-lg-6 d-flex align-items-center text-light">
                     <div class="text-center text-md-start mb-4">
-                        <h1 class="display-4 text-capitalize fw-bold fadeInLeft  wow">ready to build better software faster ?</h1>
+                        <h1 class="display-4 text-capitalize fw-bold fadeInLeft  wow">ready to build better software
+                            faster ?</h1>
                         <h6 class="lh-3">Lorem ipsum dolor,amet consectetur adipisicing sitamet consectetur
                             adipisicing<br> elit. Illum, laboriosam.</h6>
                         <div class="my-3 d-flex gap-3 flex-wrap align-items-center w-100 text-center fs-6">
-                            <span class="d-flex gap-2  align-items-center fadeInUp wow  "><iconify-icon icon="iconamoon:email-thin"
-                                    width="25" height="25" style="color: #ff961d"></iconify-icon>
+                            <span class="d-flex gap-2  align-items-center fadeInUp wow  "><iconify-icon
+                                    icon="iconamoon:email-thin" width="25" height="25"
+                                    style="color: #ff961d"></iconify-icon>
                                 info@mentosoftware.co.uk</span>
-                            <span class="d-flex gap-2  align-items-center fadeInUp wow  "><iconify-icon icon="lets-icons:phone-light"
-                                    width="25" height="25" style="color: #ff961d"></iconify-icon> 07745975978</span>
+                            <span class="d-flex gap-2  align-items-center fadeInUp wow  "><iconify-icon
+                                    icon="lets-icons:phone-light" width="25" height="25"
+                                    style="color: #ff961d"></iconify-icon> 07745975978</span>
                         </div>
                     </div>
                 </div>
@@ -544,7 +612,7 @@
                             </div>
                             <div class="col-12 form-group margin-b-none">
                                 <button type="submit" name="submit"
-                                    class="btn-theme mt-4 border-0 d-block rounded-3 w-100  fs-5 text-uppercase text-black">sent
+                                    class=" mt-4 border-0 d-block rounded-3 w-100  fs-5 text-uppercase btn-theme">sent
                                     Message</button>
 
                             </div>
@@ -648,7 +716,7 @@
     <script src="./js/slick.min.js" type="text/javascript"></script>
     <script src="./js/jquery.magnific-popup.min.js" type="text/javascript"></script>
     <script src="./js/counter.js" type="text/javascript"></script>
-    <script src="./js/app.js"></script>
+
     <script>
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
@@ -709,7 +777,7 @@
                 autoplay: true,
                 autoplaySpeed: 3000,
                 centerMode: true,
-                centerPadding: '0px',                
+                centerPadding: '0px',
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 draggable: true,
@@ -763,7 +831,7 @@
         new WOW().init();
 
     </script>
-
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

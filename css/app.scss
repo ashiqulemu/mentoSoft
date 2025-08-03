@@ -60,7 +60,7 @@
  }
 
  .form-style {
-     background: #dbcec41f;
+     background: rgb(219 206 196 / 11%);
      padding: 30px;
      border-radius: 14px;
  }
@@ -438,7 +438,7 @@
 
          &:hover {
              background: $ternary;
-             color: $white;
+             color: $white !important;
              transform: translateY(-2px);
          }
      }
@@ -614,6 +614,8 @@
              background: $white;
              animation: changeColor 32s linear infinite;
 
+
+
              @media(max-width:650px) {
                  width: 300px;
                  height: 300px;
@@ -634,6 +636,8 @@
                      height: 200px;
                  }
              }
+
+
 
              .ecommerce {
                  position: absolute;
@@ -659,6 +663,7 @@
                  animation: fadeInScale 12s ease-in-out backwards infinite;
                  opacity: 0;
                  animation-delay: 0s;
+                 cursor: pointer;
 
                  @media(max-width:650px) {
                      width: 90px;
@@ -721,6 +726,99 @@
                  top: 30px;
                  position: relative;
              }
+         }
+
+         .visualBox {
+             width: 0%;
+             background: #ffffff5c;
+             border-radius: 12px;
+             padding: 20px;
+             position: relative;
+             display: none;
+             z-index: 5;
+             overflow: hidden;
+             //  background: linear-gradient(125deg, #5a2a9f, #cc1d28); 
+
+             &::before {
+                 content: "";
+                 width: 40%;
+                 height: 270%;
+                 background-color: #000;
+                 position: absolute;
+                 top: -82%;
+                 bottom: 0;
+                 z-index: -1;
+                 left: 29%;
+                 animation: borderRotate 5s linear infinite;
+                 background: linear-gradient(0, rgb(255, 187, 0), black);
+             }
+
+             &::after {
+                 content: '';
+                 position: absolute;
+                 top: 3px;
+                 left: 3px;
+                 right: 3px;
+                 bottom: 3px;
+                 background: $white;
+                 border-radius: 10px;
+                 z-index: -1;
+             }
+
+             &.active {
+                 display: block;
+                 width: 50%;
+                 opacity: 1;
+                 animation: expand 0.4s linear;
+             }
+
+             .crossbtn {
+                 position: absolute;
+                 top: 10px;
+                 right: 15px;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 cursor: pointer;
+                 z-index: 6;
+                 background: #000;
+                 color: $white;
+                 padding: 5px;
+                 border-radius: 2px;
+
+                 &:hover {
+                     iconify-icon {
+                         color: red;
+                     }
+                 }
+
+             }
+         }
+     }
+
+
+
+     @keyframes borderRotate {
+         0% {
+
+             transform: rotate(0deg);
+         }
+
+         100% {
+
+             transform: rotate(360deg);
+         }
+     }
+
+     @keyframes expand {
+         0% {
+
+             opacity: 0;
+         }
+
+         100% {
+
+             opacity: 1;
          }
      }
 
@@ -817,6 +915,32 @@
 
  }
 
+ #demoRequest {
+     position: fixed;
+     top: 32%;
+     background-color: #FF6D33;
+     padding: 3px;
+     right: 0;
+     height: auto;
+     width: 97px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+
+      a {
+         line-height: 1.2;
+         padding: 6px;
+         color: #fff;
+         text-decoration: none;
+     }
+
+     &:hover {
+         background: #000;
+
+     }
+ }
+
  .our-products {
      background: linear-gradient(48deg, #ff71478f, #b7d3e8);
 
@@ -838,7 +962,7 @@
          }
 
          &.ai {
-             background:url(../images/pattern-1.svg), linear-gradient(-45deg, #9c523a, rgb(145 136 59 / 56%));
+             background: url(../images/pattern-1.svg), linear-gradient(-45deg, #9c523a, rgb(145 136 59 / 56%));
              background-position: center center;
              background-size: cover;
          }
@@ -853,7 +977,7 @@
              color: #fff;
              text-decoration: none;
              animation: letterSpacing 8s linear infinite;
-            //  box-shadow: -1px 0px 57px 27px rgba(255, 255, 255, 0.53);
+             //  box-shadow: -1px 0px 57px 27px rgba(255, 255, 255, 0.53);
              text-align: center;
              font-size: 1.6rem;
              line-height: 1;
@@ -993,11 +1117,11 @@
              box-shadow: -4px 8px 20px #00000029;
              padding: 4px 8px;
              background: transparent;
-             left:18%;
+             left: 18%;
              top: 45%;
              background: linear-gradient(48deg, rgb(191 20 230 / 86%), rgb(85 2 124));
              border-radius: 4px;
-            animation: tax 4s linear forwards infinite;
+             animation: tax 4s linear forwards infinite;
              animation-delay: 8s;
          }
      }
@@ -1031,13 +1155,13 @@
      50% {
          //  letter-spacing: 1px;
          transform: scale(1.09);
-          box-shadow: -1px 0px 57px 27px rgba(255, 255, 255, 0.53);
+         box-shadow: -1px 0px 57px 27px rgba(255, 255, 255, 0.53);
      }
 
      100% {
          letter-spacing: 0;
          transform: scale(1);
-        box-shadow: -1px 0px 1px 1px rgba(255, 255, 255, 0.53);
+         box-shadow: -1px 0px 1px 1px rgba(255, 255, 255, 0.53);
      }
  }
 
@@ -1108,8 +1232,8 @@
 
  @keyframes payable {
      0% {
-          left: 26%;
-             bottom: 30%;
+         left: 26%;
+         bottom: 30%;
          opacity: 0;
 
      }
@@ -1140,7 +1264,7 @@
          opacity: 1;
      }
 
-     100% { 
+     100% {
          top: 42%;
          opacity: 0;
          left: 9%;
@@ -1189,8 +1313,8 @@
 
  @keyframes banking {
      0% {
-        left: 42%;
-             top: 30%;
+         left: 42%;
+         top: 30%;
          opacity: 0;
 
      }

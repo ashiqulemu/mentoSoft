@@ -41,7 +41,7 @@ html {
 }
 
 .form-style {
-  background: rgba(219, 206, 196, 0.1215686275);
+  background: rgba(219, 206, 196, 0.11);
   padding: 30px;
   border-radius: 14px;
 }
@@ -365,7 +365,7 @@ body::-webkit-scrollbar-thumb {
 }
 .btn-theme.outline:hover {
   background: #FF6D33;
-  color: #FFffff;
+  color: #FFffff !important;
   transform: translateY(-2px);
 }
 .btn-theme:hover {
@@ -548,6 +548,7 @@ section.default.what-we-do .inner .ecommerce, section.default.what-we-do .inner 
   animation: fadeInScale 12s ease-in-out backwards infinite;
   opacity: 0;
   animation-delay: 0s;
+  cursor: pointer;
 }
 @media (max-width: 650px) {
   section.default.what-we-do .inner .ecommerce, section.default.what-we-do .inner .web, section.default.what-we-do .inner .customSoftware, section.default.what-we-do .inner .app, section.default.what-we-do .inner .graphics, section.default.what-we-do .inner .seo {
@@ -596,6 +597,79 @@ section.default.what-we-do .inner .monitor {
   width: 700px;
   top: 30px;
   position: relative;
+}
+section.default.what-we-do .visualBox {
+  width: 0%;
+  background: rgba(255, 255, 255, 0.3607843137);
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  display: none;
+  z-index: 5;
+  overflow: hidden;
+}
+section.default.what-we-do .visualBox::before {
+  content: "";
+  width: 40%;
+  height: 270%;
+  background-color: #000;
+  position: absolute;
+  top: -82%;
+  bottom: 0;
+  z-index: -1;
+  left: 29%;
+  animation: borderRotate 5s linear infinite;
+  background: linear-gradient(0, rgb(255, 187, 0), black);
+}
+section.default.what-we-do .visualBox::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  background: #FFffff;
+  border-radius: 10px;
+  z-index: -1;
+}
+section.default.what-we-do .visualBox.active {
+  display: block;
+  width: 50%;
+  opacity: 1;
+  animation: expand 0.4s linear;
+}
+section.default.what-we-do .visualBox .crossbtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 6;
+  background: #000;
+  color: #FFffff;
+  padding: 5px;
+  border-radius: 2px;
+}
+section.default.what-we-do .visualBox .crossbtn:hover iconify-icon {
+  color: red;
+}
+@keyframes borderRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes expand {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 section.default.testimonial-section {
   padding: 80px 0;
@@ -668,6 +742,29 @@ section.default.contact-section .secTtile {
 }
 .portfolio .portfolio-card:hover .btn-theme {
   background: #333;
+}
+
+#demoRequest {
+  position: fixed;
+  top: 32%;
+  background-color: #FF6D33;
+  padding: 3px;
+  right: 0;
+  height: auto;
+  width: 97px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#demoRequest a {
+  line-height: 1.2;
+  padding: 6px;
+  color: #fff;
+  text-decoration: none;
+}
+#demoRequest:hover {
+  background: #000;
 }
 
 .our-products {
