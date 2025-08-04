@@ -638,22 +638,29 @@ section.default.what-we-do .visualBox.active {
   opacity: 1;
   animation: expand 0.4s linear;
 }
+@media (max-width: 1024px) {
+  section.default.what-we-do .visualBox.active {
+    width: 38%;
+  }
+}
+@media (max-width: 768px) {
+  section.default.what-we-do .visualBox.active {
+    width: 97%;
+    position: absolute;
+  }
+}
 section.default.what-we-do .visualBox .crossbtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
+  background: linear-gradient(238deg, #F44336, #560600);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 6;
-  background: #000;
   color: #FFffff;
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 2px;
 }
-section.default.what-we-do .visualBox .crossbtn:hover iconify-icon {
-  color: red;
+section.default.what-we-do .visualBox .crossbtn:hover {
+  background: linear-gradient(238deg, #560600, #F44336);
 }
 @keyframes borderRotate {
   0% {
@@ -770,7 +777,9 @@ section.default.contact-section .secTtile {
 }
 
 .our-products {
-  background: linear-gradient(48deg, rgba(255, 113, 71, 0.5607843137), #b7d3e8);
+  overflow: hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 .our-products .innerbox {
   display: flex;
@@ -1418,6 +1427,19 @@ section.default.contact-section .secTtile {
 .testimonial-section .testimonial .blogBox .content {
   padding: 34px;
 }
+.testimonial-section .testimonial .blogBox .content p {
+  max-height: 135px;
+  overflow-y: auto;
+}
+.testimonial-section .testimonial .blogBox .content p::-webkit-scrollbar {
+  background-color: #FF6D33;
+  width: 1px;
+  border-radius: 50px;
+}
+.testimonial-section .testimonial .blogBox .content p::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #333;
+}
 .testimonial-section .testimonial .blogBox .content img {
   transition: all 0.4s ease;
 }
@@ -1582,7 +1604,7 @@ section.default.contact-section .secTtile {
 }
 @media (max-width: 768px) {
   .cta .inner h3 {
-    background: #fff;
+    background: #EEF8FE;
     z-index: 1;
     position: relative;
   }
