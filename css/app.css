@@ -753,7 +753,7 @@ section.default.contact-section .secTtile {
 
 #demoRequest {
   position: fixed;
-  top: 32%;
+  top: 19%;
   background-color: #FF6D33;
   padding: 3px;
   right: 0;
@@ -767,7 +767,7 @@ section.default.contact-section .secTtile {
   box-shadow: -3px 4px 3px rgba(0, 0, 0, 0.4);
 }
 #demoRequest a {
-  line-height: 1.2;
+  line-height: 1.1;
   padding: 6px;
   color: #fff;
   text-decoration: none;
